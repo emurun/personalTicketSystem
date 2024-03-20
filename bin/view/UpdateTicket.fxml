@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UpdateTicketController">
+   <children>
+      <TitledPane alignment="CENTER" animated="false" prefHeight="600.0" prefWidth="600.0" text="Update Ticket">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+               <children>
+                  <AnchorPane prefHeight="555.0" prefWidth="600.0" style="-fx-background-color: #FFB6C1;">
+                     <children>
+                        <Label layoutX="43.0" layoutY="98.0" prefHeight="16.0" prefWidth="281.0" text="Title:" />
+                        <TextField fx:id="ticketTitle" layoutX="43.0" layoutY="123.0" prefHeight="34.0" prefWidth="502.0" />
+                        <TextArea fx:id="ticketDescription" layoutX="43.0" layoutY="190.0" prefHeight="190.0" prefWidth="502.0" text="&#10;&#10;" />
+                         <Button fx:id="saveTicket" layoutX="181.0" layoutY="441.0" mnemonicParsing="false" onAction="#saveTicketOp" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: #FFFFF0;" text="Save" />
+                         <Button fx:id="delete_project" layoutX="181.0" layoutY="489.0" mnemonicParsing="false" onAction="#deleteTicketOp" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: #FFFFF0;" text="Delete" />
+	
+                        <Label layoutX="43.0" layoutY="167.0" prefHeight="16.0" prefWidth="281.0" text="Enter Description of Ticket :" />
+                        <Button fx:id="addComment" layoutX="181.0" layoutY="397.0" mnemonicParsing="false" onAction="#addCommentOp" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: #FFFFF0;" text="Add Another Comment" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

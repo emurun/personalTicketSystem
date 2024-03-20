@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="ticket_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="147.0" prefWidth="184.0" style="-fx-background-color: #FFF5EE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CardCommentController">
+   <children>
+      <VBox layoutX="4.0" layoutY="-0.8" prefHeight="147.0" prefWidth="176.0" style="-fx-border-color: #B22222;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="230.0">
+               <children>
+                  <Label fx:id="comment_id" prefHeight="17.0" prefWidth="213.0" text="Comment ID" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="166.0">
+               <children>
+                  <Label fx:id="ticket_name" prefHeight="38.0" prefWidth="162.0" text="Ticket Name:" />
+               </children></HBox>
+            <HBox prefHeight="54.0" prefWidth="138.0">
+               <children>
+                  <Label fx:id="comment_name" prefHeight="74.0" prefWidth="166.0" text="Comment " />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
